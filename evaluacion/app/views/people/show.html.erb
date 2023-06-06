@@ -1,0 +1,30 @@
+
+<h1>Persona</h1>
+<dl>
+    <dt>Identificacion</dt>
+    <dd><%=@person.identificacion%></dd>
+
+    <dt>primer nombre</dt>
+    <dd><%=@person.primer_nombre%></dd>
+
+    <dt>segundo nombre</dt>
+    <dd><%=@person.segundo_nombre%></dd>
+
+    <dt>primer apellido</dt>
+    <dd><%=@person.primer_apellido%></dd>
+
+    <dt>segundo apellido</dt>
+    <dd><%=@person.segundo_apellido%></dd>
+
+    <dt>identificacion</dt>
+    <dd><%=@person.document.tipo_documento%></dd>
+
+    <dt>rol</dt>
+    <dd><%=@person.role.nombre_rol%></dd>
+
+
+
+    </dl>
+
+    <%= link_to 'Editar', edit_person_path %> |
+    <%= link_to 'Eliminar', @person, method: :delete %>
